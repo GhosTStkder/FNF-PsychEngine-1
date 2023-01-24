@@ -36,9 +36,9 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		#if windows 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
-		#if !switch 'donate', #end
+		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		//'credits',
+		//#if !switch 'donate', #end
 		'options'
 	];
 
@@ -270,7 +270,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			spr.screenCenter(X);
+			spr.x = 200;
 		});
 	}
 
